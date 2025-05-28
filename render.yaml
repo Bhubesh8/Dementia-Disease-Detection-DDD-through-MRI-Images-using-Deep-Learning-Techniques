@@ -1,6 +1,6 @@
 services:
   - type: web
     name: dementia-detection-app
-    env: python
+    env: Python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
