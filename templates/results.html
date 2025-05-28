@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <h2>Your Score: {{ score }} out of {{ responses|length }}</h2>
+        <h3>
+            {% if score >= 8 %}
+                Non Demented
+            {% elif score >= 6 %}
+                Very Mild Demented
+            {% elif score >= 4 %}
+                Mild Demented
+            {% else %}
+                Demented
+            {% endif %}
+        </h3>
+        <ul>
+            {% for response in responses %}
+                <li>Question {{ loop.index }}: {{ response }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Retake Quiz</a>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠Test Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="overlay">
+        <h1>Quiz Results</h1>
+        <h2>Your Score: {{ score }}</h2>
+        <h3 class="diagnosis">
+            {% if score >= 8 %}
+                Non Demented
+            {% elif score >= 6 %}
+                Very Mild Demented
+            {% elif score >= 4 %}
+                Mild Demented
+            {% elif score < 4 %}
+                Demented
+            {% endif %}
+        </h3>
+        <ol>
+            {% for answer in responses %}
+              {% if answer.lower() != 'ok' %}
+                <li>{{ answer }}</li>
+              {% endif %}
+            {% endfor %}
+          </ol>          
+        <a class="btn" href="{{ url_for('home') }}">Return to Home</a>
+    </div>
+</body>
+</html>
+

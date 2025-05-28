@@ -1,0 +1,313 @@
+/* body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #1e4d65;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a.active {
+    border-bottom: 3px solid #64d0e8;
+    padding-bottom: 4px;
+}
+
+.content {
+    max-width: 700px;
+    background: white;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-box, .results {
+    background-color: #e8f4f8;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.response-input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+.button {
+    background-color: #1e4d65;
+    color: white;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #15506d;
+}
+
+h1, h2, h3 {
+    color: #1e4d65;
+}
+
+.diagnosis {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #1a7e93;
+    margin-top: 0.5em;
+}
+
+.instruction {
+    font-style: italic;
+    color: #555;
+} */
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: #fbc02d;
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn.secondary {
+    background-color: #1976d2;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  input[type="file"] {
+    color: white;
+    margin-bottom: 10px;
+  } */
+  
+
+  /* General Reset and Base */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('bg_mri.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Header Style */
+.header {
+  background-color: #004080;
+  color: white;
+  font-style: normal;
+  font-size: x-large;
+  font-weight:900;
+  padding-left: 10%;
+  display: flexbox;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #cde6ff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Titles */
+.section-title {
+  color: #004080;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Question/Result Boxes */
+.question-box,
+.result-details {
+  margin-top: 1.5rem;
+}
+
+.question-box h3,
+.result-details h4 {
+  color: #004080;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #007acc;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+/* List in Results */
+ol {
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Diagnosis Highlight */
+.diagnosis {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Score Label */
+.score-title {
+  font-size: 1.3rem;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+/* Instruction Paragraph */
+.instructions {
+  background: #e6f2ff;
+  padding: 1rem;
+  border-left: 4px solid #007acc;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+

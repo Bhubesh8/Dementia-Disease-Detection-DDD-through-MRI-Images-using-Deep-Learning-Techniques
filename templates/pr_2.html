@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Prediction and Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        
+        <p><strong>Detected Type:</strong> {{ prediction }}</p>
+        <p><strong>Confidence Score:</strong> {{ confidence }}%</p>
+        <a class="btn" href="{{ url_for('home') }}">Return to Home</a>
+    </div>
+</body>
+</html> -->
+
+<!-- templates/pr_2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result!!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    .result-img {
+            max-width: 300px;
+            margin: 20px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .result-text {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: black;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="result-text"> Prediction Result</h1>
+        <img src="{{ image_url }}" alt="MRI Image" class="result-img">
+        <p class="result-text">Detected Type: {{ prediction }}</p>
+        <p class="result-text">Confidence Score: {{ confidence }}%</p>
+        <a class="btn" href="{{ url_for('home') }}">Return to Home</a>
+    </div>
+</body>
+</html>

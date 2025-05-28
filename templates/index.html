@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Upload MRI Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>MRI Dementia Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Dementia Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> DEMENTIA DISEASE DETECTOR</div>
+        <nav>
+            <a>Patient Assessment</a>
+            <a class="active">Informant Interview</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>MRI Dementia Detection</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧠General Practitioner Assessment of Cognition</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="title">
+        <div class="header">🧠 DEMENTIA DISEASE DETECTOR(DDD)</div>
+  <div class="overlay">
+    <h1>DISEASE DETECTOR &<br>ASSESSMENT OF COGNITION</h1>
+    <p>The General Assessment of Cognition and Dementia Detector through MRI is a tool for early dementia screening.</p>
+    
+    <div class="buttons">
+      <p>
+        <sub>General cognition test for Dementia</sub>  
+      <a href="{{ url_for('start_quiz') }}" class="btn">Begin Cognitive Test</a>
+      </p>
+      <p>
+        <sub>Detects Dementia through MRI scan</sub>
+        <a href="{{url_for('upload_page') }}" class="btn">Upload MRI for Prediction</a>
+      </p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

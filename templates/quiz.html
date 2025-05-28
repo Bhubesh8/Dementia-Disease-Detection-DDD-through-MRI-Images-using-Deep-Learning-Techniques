@@ -1,0 +1,77 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Question {{ index }}/{{ total }}</h1>
+        <p>{{ question }}</p>
+        <form method="POST">
+            <input type="text" name="response" required>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🧠 DEMENTIA DISEASE DETECTOR</div>
+        <nav>
+            <a class="active">Patient Assessment</a>
+            <a>Informant Interview</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Question {{ index }}</h1>
+        <p class="instruction">Please answer the question below:</p>
+        <div class="question-box">
+            <p>{{ question }}</p>
+            <form method="POST">
+                <input type="text" name="response" required class="response-input">
+                <button type="submit" class="button">Next</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧠Question {{ index }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="overlay">
+    <h2>Question {{ index }}</h2>
+    <p>{{ question.replace('\n', '<br>') | safe }}</p>
+
+    {% if index == 5 %}
+      <img src="{{ url_for('static', filename='images/mango_pic.png') }}" alt="Question 5 Image" style="max-width: 400px; margin: 20px 0;">
+    {% elif index == 7 %}
+      <img src="{{ url_for('static', filename='images/tiger_pic.png') }}" alt="Question 7 Image" style="max-width: 400px; margin: 20px 0;">
+    {% elif index == 13 %}
+      <img src="{{ url_for('static', filename='images/Pattern_pic.png') }}" alt="Question 13 Image" style="max-width: 400px; margin: 20px 0;">
+    {% endif %}
+
+    <form method="POST">
+      <input type="text" name="response" required placeholder="Type your answer here">
+      <br><br>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
