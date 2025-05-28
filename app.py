@@ -145,8 +145,6 @@ import uuid
 app = Flask(__name__)
 app.secret_key = 'Bhubi@29'
 app.config['UPLOAD_FOLDER'] = 'uploads'
-
-model = load_model("Dementia_Model_binary.h5")
 class_labels = ['Mild Demented', 'Moderate Demented', 'Non Demented', 'Very MildDemented']
 
 present_date = date.today()
@@ -185,6 +183,7 @@ answers = [
 ]
 
 def predict_image(img_path):
+    model = load_model("Dementia_Model_binary.h5")
     img = image.load_img(img_path, target_size=(224, 224))
     img_tensor = image.img_to_array(img)
     img_tensor = tf.keras.applications.mobilenet_v2.preprocess_input(img_tensor)
