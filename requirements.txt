@@ -27,6 +27,8 @@ Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
+gunicorn==21.2.0
+
 ml_dtypes==0.5.1
 namex==0.0.8
 narwhals==1.31.0
